@@ -1,0 +1,17 @@
+{
+"manifest_version": 2,
+    "name": "LinkedIncognito",
+    "description": "Anonymizes candidates to reduce unconscious bias.",
+    "version": "1.0",
+    "content_scripts": [
+        {
+            "matches": [
+                "*://angel.co/*"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "run_at": "document_idle"
+        }
+    ]
+}
